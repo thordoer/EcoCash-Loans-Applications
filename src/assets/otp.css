@@ -1,0 +1,246 @@
+/*
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otpcont {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 50%;
+  background-color: whitesmoke;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+.otpcont div {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+.otpcont div input {
+  width: 14%;
+  padding: 1.2rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #0a35f3;
+}
+.otpcont div input:focus {
+  border: 2px solid #0a35f3;
+}
+
+.otpheader {
+  display: flex;
+  flex-direction: column;
+}
+.otpheader p {
+  font-size: 1.6rem;
+}
+.otpcta {
+  display: flex;
+  flex-direction: column;
+}
+
+.otpcta p {
+  font-size: 1.6rem;
+}
+.otpcta button {
+  width: 90%;
+  padding: 1.4rem 0;
+  border-radius: 1rem;
+  /* background-color: inherit; 
+  font-size: 1.6rem;
+  font-weight: 550;
+  border: 0.4px solid rgba(0, 0, 0, 0.152);
+}
+.submmit {
+  border: none;
+  background-color: rgb(14, 14, 253);
+  color: white;
+}
+*/
+
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+.otpheader {
+  display: flex;
+  flex-direction: column;
+}
+
+.otpheader p {
+  font-size: 1.6rem;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: 90%;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+  color: #333;
+  background-color: #f8fafc;
+}
+
+.otp-input:focus {
+  border-color: #3b82f6;
+  /* box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25); */
+  background-color: white;
+}
+
+.otp-input.filled {
+  border-color: #10b981;
+  /* background-color: #f0fdf4; */
+}
+
+.otp-input::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.otp-display {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  min-width: 380px;
+  border: 1px solid #e1e5e9;
+}
+
+.otp-display p {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.otp-display strong {
+  color: #1d4ed8;
+  /* color: rgb(12, 221, 12); */
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-family: "Courier New", monospace;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e1e5e9;
+}
+
+.otp-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.resindp {
+  font-size: 16px;
+}
+.clear-btn,
+.copy-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: 1rem;
+  font-weight: bold;
+  width: 80%;
+}
+
+.clear-btn {
+  background-color: rgba(214, 214, 6, 0.79);
+  color: rgba(0, 0, 0, 0.701);
+}
+
+.clear-btn:hover {
+  /* background-color: #dc2626;s */
+}
+
+.copy-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.copy-btn:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.copy-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .otp-input {
+    width: 46px;
+    height: 58px;
+    font-size: 24px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+  .otpheader h1 {
+    font-size: 3rem;
+  }
+  s .otp-container {
+    padding: 20px 15px;
+  }
+
+  .otp-actions {
+    flex-direction: column;
+  }
+
+  .clear-btn,
+  .copy-btn {
+    width: 100%;
+  }
+}
+
+/* Animation for when OTP is complete */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.otp-input.filled:last-child {
+  animation: pulse 0.5s ease;
+}

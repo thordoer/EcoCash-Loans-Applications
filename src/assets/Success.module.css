@@ -1,0 +1,26 @@
+.successcont {
+  min-height: 30rem;
+  background-color: aliceblue;
+  width: 38rem;
+  margin: 20% auto;
+  /* margin-bottom: 2rem; */
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.236);
+}
+
+.successcont h1 {
+  color: #007bff;
+}
+
+.successcont p {
+  font-size: 16px;
+}
+
+.successcont span {
+  font-size: 14px;
+  font-weight: bold;
+}

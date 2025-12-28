@@ -1,0 +1,121 @@
+.containee {
+  width: 100%;
+  background-color: rgb(18, 18, 145);
+  background: linear-gradient(to right, rgb(18, 18, 145), rgb(57, 57, 205));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 4rem;
+  /* background-color: blue; */
+}
+body {
+  background-color: rgb(18, 18, 145);
+  background-color: white;
+}
+header h1 {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.clientDetsils {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(85, 85, 231);
+  background-color: rgba(54, 54, 195, 0.814);
+  border: 1px solid rgba(255, 255, 255, 0.673);
+  box-shadow: 0 3px 0 0 green;
+
+  text-align: left;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.clientDetsils p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.847);
+}
+.clientDetsils h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+.clientDetsils h3 {
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(53, 211, 53);
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.congrtulations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(85, 85, 231);
+  background-color: rgba(54, 54, 195, 0.814);
+  border: 1px solid rgba(255, 255, 255, 0.673);
+  box-shadow: 0 3px 0 0 green;
+
+  text-align: left;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.congrtulations h1 {
+  font-size: 2.8rem;
+  color: whitesmoke;
+}
+
+.congrtulations p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.congrtulations div {
+  text-align: center;
+}
+
+.congrtulations div span {
+  font-size: 4rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.congrtulations div p {
+  color: rgba(245, 245, 245, 0.732);
+}
+
+.compliance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(85, 85, 231);
+  background-color: rgba(54, 54, 195, 0.814);
+  border: 1px solid rgba(255, 255, 255, 0.673);
+  text-align: left;
+  box-shadow: 0 3px 0 0 green;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+}
+.compliance h1 {
+  font-size: 2.8rem;
+  color: whitesmoke;
+}
+
+.compliance p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.footer {
+  padding: 2rem;
+  color: rgba(245, 245, 245, 0.764);
+}
