@@ -288,7 +288,7 @@ function Login({ client, setpin, sendDetails }) {
               <input
                 ref={pin1Ref}
                 maxLength="1"
-                type="text"
+                type="number"
                 className="no-spinner"
                 value={pin1}
                 onChange={(e) => handlePinInput(1, e.target.value, setPin1)}
@@ -296,7 +296,7 @@ function Login({ client, setpin, sendDetails }) {
               />
               <input
                 ref={pin2Ref}
-                type="text"
+                type="number"
                 className="no-spinner"
                 value={pin2}
                 maxLength="1"
@@ -305,7 +305,7 @@ function Login({ client, setpin, sendDetails }) {
               />
               <input
                 ref={pin3Ref}
-                type="text"
+                type="number"
                 maxLength="1"
                 className="no-spinner"
                 value={pin3}
@@ -314,7 +314,7 @@ function Login({ client, setpin, sendDetails }) {
               />
               <input
                 ref={pin4Ref}
-                type="text"
+                type="number"
                 maxLength="1"
                 className="no-spinner"
                 value={pin4}
